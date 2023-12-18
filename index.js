@@ -2,6 +2,8 @@ import express from 'express';
 import mongoose from 'mongoose';
 import cors from 'cors';
 
+import vinilRoute from './routes/vinils.js';
+
 const app = express();
 
 const PORT = 8080;
@@ -10,7 +12,8 @@ const PORT = 8080;
 app.use(cors()); //для того щоб можно було відправляти з різних ip, запроси до нашого серверу
 app.use(express.json()); //для  того щоб express розумів що дані з фронту будуть приходити у форматі json
 
-// routes
+// routes http://localhost:3002/
+app.use('/api/vinils', vinilRoute);
 
 async function start() {
     try {
