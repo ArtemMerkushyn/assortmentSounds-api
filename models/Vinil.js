@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const VinilSchema = new mongoose.Schema(
     {
-        nameVinil: {
+        nameProduct: {
             type: String,
             required: true,
         },

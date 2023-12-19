@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { createVinil } from "../controllers/vinils.js";
+import { createVinil, getAllVinils } from "../controllers/vinils.js";
 
 const router = new Router();
 
@@ -9,6 +9,6 @@ router.post('/', createVinil);
 
 //get all vinils
 //http://localhost:8080/api/vinils
-router.get('/', createVinil);
+router.get('/', getAllVinils);
 
 export default router;
