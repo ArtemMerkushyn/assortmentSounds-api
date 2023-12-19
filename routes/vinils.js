@@ -13,6 +13,6 @@ router.get('/', getAllVinils);
 
 //get vinil by id
 //http://localhost:8080/api/vinils/:id
-router.get('/:id', getVinilById)
+router.get('/:id', getVinilById);
 
 export default router;
