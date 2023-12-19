@@ -7,4 +7,8 @@ const router = new Router();
 //http://localhost:8080/api/vinils
 router.post('/', createVinil);
 
+//get all vinils
+//http://localhost:8080/api/vinils
+router.get('/', createVinil);
+
 export default router;
