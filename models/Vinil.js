@@ -46,4 +46,4 @@ const VinilSchema = new mongoose.Schema(
     },
     { timestamps: true },
 );
-export default mongoose.model/('Vinil', VinilSchema);
+export default mongoose.model('Vinil', VinilSchema);
