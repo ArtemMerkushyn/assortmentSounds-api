@@ -26,3 +26,13 @@ export const getAllVinils = async (req, res) => {
         res.json({ message: `Щось пішло не так. ${error}` });
     }
 }
+
+// get vinil by id
+export const getVinilById = async (req, res) => {
+    try {
+        const vinil = await Vinil.findById(req.params.id);
+        return res.json(vinil);
+    } catch (error) {
+        res.json({ message: `Щось пішло не так. ${error}` });
+    }
+}
